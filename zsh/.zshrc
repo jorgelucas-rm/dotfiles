@@ -127,3 +127,5 @@ eval $(thefuck --alias)
 
 # starship config 20/11/2025
 eval "$(starship init zsh)"
+
+export PATH="$HOME/.local/bin:$PATH"

@@ -1,0 +1,68 @@
+onboarding = false
+[theme]
+name = "catppuccin"
+auto_switch = false
+
+
+[keys]
+# I think this is a better way
+prefix="ctrl+s"
+
+# I made vim motion for panes, because i use neovim (btw)
+focus_pane_left="prefix+h"
+focus_pane_down="prefix+j"
+focus_pane_up="prefix+k"
+focus_pane_right="prefix+l"
+
+# Split window with vim motions
+split_vertical="prefix+L"
+split_horizontal="prefix+J"
+
+# Like tmux
+new_tab="prefix+c"
+new_workspace="prefix+C"
+
+# Like nvim
+toggle_sidebar="prefix+e"
+
+switch_tab = "prefix+1..9"
+switch_workspace = "prefix+shift+1..9"
+focus_agent = "prefix+alt+1..9"
+
+[experimental]
+pane_history = true
+
+
+[[keys.command]] # Lazygit
+key = "prefix+alt+g"
+type = "popup"
+command = "lazygit"
+description = "Opens Lazygit in a pop-up window"
+width = "80%"
+height = "80%"
+
+[[keys.command]] # Lazydocker
+key = "prefix+alt+d"
+type = "popup"
+command = "lazydocker"
+description = "Opens Lazydocker in a pop-up window"
+width = "80%"
+height = "80%"
+
+[[keys.command]] # NeoVim
+key = "prefix+alt+n"
+type = "pane"
+command = "nvim ."
+description = "Run NeoVim on current path"
+
+[[keys.command]] # Claude
+key = "prefix+alt+c"
+type = "pane"
+command = "claude --dangerously-skip-permissions"
+description = "Run Claude on current path"
+
+[[keys.command]] # Claude
+key = "prefix+alt+p"
+type = "popup"
+command = "ping google.com"
+description = "Ping Google"
